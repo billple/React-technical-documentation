@@ -5,20 +5,36 @@ body {
   line-height: 1.5;
 }
 
+#topic-1, #topic-2, #topic-3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #navbar {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   height: 100%;
-  background-color: grey;
-  padding: 10px;
+  width: 300px;
+  background-color: #D1EAFC;
   min-width: 290px;
+  border-right: 2px solid;
 }
 
 #navbar ul {
-  
+  height: 88%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 #navbar li {
+  color: #AEACAC;
+  position: relative;
+  border: 1px solid;
+  border-bottom-width: 0px;
+  width: 100%;
+  padding: 8px;
+  padding-left: 45px;
+  left: -50px;
   list-style: none;
 }
 
@@ -26,4 +42,23 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+#navbar a:hover {
+  color: #C8C8C8;
+}
+
+#main-doc {
+  margin-left: 350px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.content-box {
+  width: 300px;
 }
